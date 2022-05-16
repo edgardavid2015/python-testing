@@ -1,0 +1,13 @@
+name: Initial Action
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  print_date:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Date
+        run: date
